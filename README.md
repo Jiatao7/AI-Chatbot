@@ -13,7 +13,7 @@ Setup/install necessary libraries:
 - Make sure your python interpreter is correct by doing ```CTRL + SHIFT + P```, then "Python: Select Interpreter", and choosing "Python 3.11.4" or similar
 
 ### Every time:
-Launching the display is hella easy:
+Launching the display is easy:
 - Just run the ```app.py``` file in ```src```
 Launching the display may be tricky:
 - The program is executed from the ```app.py``` file in folder ```src```
