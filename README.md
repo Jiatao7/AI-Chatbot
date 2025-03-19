@@ -1,23 +1,57 @@
-## Display
+# AI Chatbot
 
-### Initial Setup:
-Creating the virtual environment:
-- Open a new cmd terminal in VS code (if not default, click dropdown arrow next to '+' on the terminal top right then choose command prompt)
-- In the terminal, ```pip install virtual env```
-- Create an environment: ```virtual env venv```
-- Launch environment: ```venv\Scripts\activate.bat.``` You should see (venv) at the beginning of the command line if you've successfully entered the environment.
+## Overview
+This project is an AI Chatbot that can engage in conversations with the user. The chatbot takes voice inputs, processes them using speech-to-text (STT), generates responses via the OpenAI API, and outputs the responses through text-to-speech (TTS). A graphical user interface (GUI) is also included to display the chat history and chatbot status during conversations.
 
-Setup/install necessary libraries:
-- Once the virtual environment is launched, run:
-    - ```pip install openai speechrecognition gtts playsound torch torchvision matplotlib PyAudio Pillow```
-- Make sure your python interpreter is correct by doing ```CTRL + SHIFT + P```, then "Python: Select Interpreter", and choosing "Python 3.11.4" or similar
+## Features
+### Core Features
+- **Speech-to-Text (STT)**: Uses the Speech Recognition library to convert microphone inputs into text.
 
-### Every time:
-Launching the display is easy:
-- Just run the ```app.py``` file in ```src```
-Launching the display may be tricky:
-- The program is executed from the ```app.py``` file in folder ```src```
-- You may need to install a variety of modules including: torch, speech_recognition, tkinter, translate, and more.
-- You will need to compile it in a virtual environment if you are not using Python 3.12
-- If you are using python 3.12, it should run easily then.
-- The display is made using tkinter library
+- **Text-to-Speech (TTS)**: Uses the eSpeak library to convert AI-generated responses into speech.
+
+- **Graphical User Interface (GUI)**: Provides a display built using Tkinter to allow the user to interact with the application. Also displays the chat history and chatbot status during conversations.
+
+### Additional Features
+- **Mini-Games**: Offers minigames including chess and tic-tac-toe for the user to play against the chatbot. Boards are displayed on the GUI.
+
+- **Save and Load Chat**: Stores conversations between the user and chatbot to enable the user to continue a conversation at a later date. 
+
+- **Language Customization**: Supports six different languages (English, Spanish, French, German, Italian, and Portuguese).
+
+- **Dynamic Speaking Tones**: Adjusts the chatbot's tone based on conversation context.
+
+- **Dynamic Avatars**: Generates avatars that reflect the chatbot's mood using a machine-learning model built with PyTorch.
+
+## Try Out the Project
+*This project was initially designed to run on a Raspberry Pi, along with a monitor and microphone. However, it can also be easily run on a personal device.*
+
+### Clone the Repository:
+```
+git clone https://github.com/Jiatao7/AI-Chatbot.git
+cd AI-Chatbot
+```
+
+### Create Virtual Environment:
+In the terminal, run:
+~~~ 
+pip install virtual env
+virtual env venv
+venv\Scripts\activate.bat
+~~~
+
+### Install Libraries:
+Once the virtual environment is launched, install the required libraries by running:
+~~~ 
+pip install openai speechrecognition gtts playsound torch torchvision matplotlib PyAudio Pillow
+~~~
+
+### Configure API Key:
+Obtain an OpenAI API key: https://openai.com/api/
+
+Then store the key in a .env file:
+~~~
+API_KEY=<insert api key>
+~~~
+
+### Run the Chatbot:
+Run the ```app.py``` file in the ```src``` folder.
