@@ -7,20 +7,20 @@ This project is an AI Chatbot that can engage in conversations with the user. Th
 ### Core Features
 - **Speech-to-Text (STT)**: Uses the Speech Recognition library to convert microphone inputs into text.
 
-- **Text-to-Speech (TTS)**: Uses the eSpeak library to convert AI-generated responses into speech.
+- **Text-to-Speech (TTS)**: Uses the eSpeak library to convert the chatbot's responses into speech.
 
 - **Graphical User Interface (GUI)**: Provides a display built using Tkinter to allow the user to interact with the application. Also displays the chat history and chatbot status during conversations.
 
 ### Additional Features
-- **Mini-Games**: Offers minigames including chess and tic-tac-toe for the user to play against the chatbot. Boards are displayed on the GUI.
-
 - **Save and Load Chat**: Stores conversations between the user and chatbot to enable the user to continue a conversation at a later date. 
-
-- **Language Customization**: Supports six different languages (English, Spanish, French, German, Italian, and Portuguese).
 
 - **Dynamic Speaking Tones**: Adjusts the chatbot's tone based on conversation context.
 
-- **Dynamic Avatars**: Generates avatars that reflect the chatbot's mood using a machine-learning model built with PyTorch.
+- **Language Customization**: Supports six different languages (English, Spanish, French, German, Italian, and Portuguese).
+
+- **Mini-Games**: Offers minigames including chess and tic-tac-toe for the user to play against the chatbot. Boards are displayed on the GUI.
+
+- **AI-Generated Avatars**: Generates avatars that reflect the chatbot's mood using a machine-learning model built with PyTorch.
 
 ## Try Out the Project
 *This project was initially designed to run on a Raspberry Pi, along with a monitor and microphone. However, it can also be easily run on a personal device.*
